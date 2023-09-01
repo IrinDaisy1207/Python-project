@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1> Uses</h1>
+<p>  <i> Django is a high-level Python web framework</i> <br> that enables rapid development of secure and maintainable websites.</p>
+<h6> Purpose </h6>
+<p><b>The Django web framework </b> is a free, open source framework that can speed up development of a web application being built in the Python programming language. Django—pronounced “Jango,” named after the famous jazz guitarist Django Reinhardt—is a free, open source framework that was first publicly released in 2005.</p>
+<p> HI  {{name}} <br>
+Welcome {{ firstname }}, {{ lastname }}, {{ age }}
+</p>
+{% if age >= 18 %}
+    can vote
+{% else %}
+    cannot vote
+{% endif %}
+<table border = 1>
+    <tr>
+       <td>name</td>
+        <td>height</td>
+        <td>age</td>
+        <td> check</td>
+    </tr>
+{% for w in info %}
+<tr>
+    <td> {{ w.name }} </td>
+    <td> {{ w.height }}</td>
+    <td> {{ w.age }}</td>
+
+{% endif %}
+</tr>
+    {% endfor %}
+</table>
+
+</body>
+</html>
